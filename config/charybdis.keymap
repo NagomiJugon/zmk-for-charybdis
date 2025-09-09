@@ -16,13 +16,13 @@
 
         escc {
             bindings = <&kp ESC>;
-            key-positions = <18 19>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
         windows {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <43 44>;
+            key-positions = <45 44>;
         };
 
         left_tab {
@@ -30,34 +30,14 @@
             key-positions = <13 14>;
         };
 
-        L_CTRL {
-            bindings = <&kp LCTRL>;
-            key-positions = <27 28>;
-        };
-
-        R_CTRL {
-            bindings = <&kp RCTRL>;
-            key-positions = <31 32>;
-        };
-
-        L_SHIFT {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <26 27>;
-        };
-
-        R_SHIFT {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <32 33>;
-        };
-
         R_RETURN {
             bindings = <&kp RETURN>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
         };
 
         R_BACKSPACE {
             bindings = <&kp BACKSPACE>;
-            key-positions = <42 43>;
+            key-positions = <43 44>;
         };
     };
 
@@ -66,12 +46,12 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3  &kp N4        &kp N5       &kp N6          &kp N7  &kp N8     &kp N9   &kp N0       &kp BSPC
-&kp TAB         &kp Q   &kp W   &kp E   &kp R         &kp T        &kp Y           &kp U   &kp I      &kp O    &kp P        &kp BACKSLASH
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D   &kp F         &kp G        &kp H           &kp J   &kp K      &kp L    &kp SEMI     &kp APOS
-&kp LCTRL       &kp Z   &kp X   &kp C   &kp V         &kp B        &kp N           &kp M   &kp COMMA  &kp DOT  &lt 3 SLASH  &kp DELETE
-                                &mo 3   &kp LCTRL     &kp SPACE    &mo 1           &mo 2
-                                        &kp LEFT_ALT  &kp SPACE    &kp DOWN_ARROW
+&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4          &kp N5       &kp N6          &kp N7  &kp N8     &kp N9   &kp N0       &kp BSPC
+&kp TAB         &kp Q   &kp W   &kp E      &kp R           &kp T        &kp Y           &kp U   &kp I      &kp O    &kp P        &kp BACKSLASH
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F           &kp G        &kp H           &kp J   &kp K      &kp L    &kp SEMI     &kp APOS
+&kp LCTRL       &kp Z   &kp X   &kp C      &kp V           &kp B        &kp N           &kp M   &kp COMMA  &kp DOT  &lt 3 SLASH  &kp DELETE
+                                &kp LCTRL  &kp LEFT_SHIFT  &kp SPACE    &mo 1           &mo 2
+                                           &kp LEFT_ALT    &kp SPACE    &kp DOWN_ARROW
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -79,23 +59,23 @@
 
         layer_1 {
             bindings = <
-&kp TILDE         &kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp GRAVE         &kp EXCL         &kp AT    &kp HASH    &kp DOLLAR     &kp PRCNT      &kp CARET  &kp AMPS       &kp ASTRK     &kp LPAR              &kp RPAR               &kp DEL
-&kp LEFT_CONTROL  &kp N1           &kp N2    &kp N3      &kp N4         &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp PAGE_UP
-&kp LSHFT         &kp SQT          &kp LBKT  &kp RBKT    &kp BACKSLASH  &kp GRAVE      &kp EQUAL  &kp MINUS      &kp LT        &kp GT                &kp SLASH              &kp PAGE_DOWN
-                                             &none       &kp LCTRL      &kp SPACE      &none      &none
-                                                         &none          &none          &trans
+&kp TILDE         &kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp DOLLAR      &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&kp GRAVE         &kp EXCL         &kp AT    &kp HASH    &kp DOLLAR      &kp PRCNT      &kp CARET  &kp AMPS       &kp ASTRK     &kp LPAR              &kp RPAR               &kp DEL
+&kp LEFT_CONTROL  &kp N1           &kp N2    &kp N3      &kp N4          &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp PAGE_UP
+&kp LSHFT         &kp SQT          &kp LBKT  &kp RBKT    &kp BACKSLASH   &kp GRAVE      &kp EQUAL  &kp MINUS      &kp LT        &kp GT                &kp SLASH              &kp PAGE_DOWN
+                                             &kp LCTRL   &kp LEFT_SHIFT  &kp SPACE      &none      &none
+                                                         &none           &none          &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&kp F12           &kp F1  &kp F2   &kp F3   &kp F4     &kp F5           &kp F6         &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&kp LS(GRAVE)     &kp F1  &kp F2   &kp F3   &kp F4     &kp RG(LS(S))    &none          &none           &kp UP_ARROW    &none            &none    &trans
-&kp LEFT_CONTROL  &kp F5  &kp F6   &kp F7   &kp F8     &kp TAB          &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &trans
-&kp LEFT_SHIFT    &kp F9  &kp F10  &kp F11  &kp F12    &kp LS(CAPS)     &kp PAGE_DOWN  &none           &none           &none            &none    &trans
-                                   &none    &kp LCTRL  &kp LEFT_ALT     &none          &none
-                                            &trans     &trans           &none
+&kp F12           &kp F1  &kp F2   &kp F3     &kp F4          &kp F5          &kp F6         &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
+&kp LS(GRAVE)     &kp F1  &kp F2   &kp F3     &kp F4          &none           &none          &none           &kp UP_ARROW    &none            &none    &trans
+&kp LEFT_CONTROL  &kp F5  &kp F6   &kp F7     &kp F8          &kp TAB         &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &trans
+&kp LEFT_SHIFT    &kp F9  &kp F10  &kp F11    &kp F12         &kp LS(CAPS)    &kp PAGE_DOWN  &none           &none           &none            &none    &trans
+                                   &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT    &none          &none
+                                              &trans          &trans          &none
             >;
         };
 
