@@ -43,11 +43,6 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <42 43>;
         };
-
-//        L_ALT {
-//            bindings = <&kp LEFT_ALT>;
-//            key-positions = <40 41>;
-//        };
     };
 
     keymap {
